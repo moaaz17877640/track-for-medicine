@@ -4,23 +4,55 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
+# Dependencies
 node_modules
 dist
-dist-ssr
-*.local
+build/
+public/build/
+
+# Environment and secrets
+.env
+.env.local
+.env.*
+secrets.json
+config.json
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*_rsa
+*_dsa
+*_ed25519
+*_ecdsa
+*.keystore
+*.jks
+*.p8
+credentials.json
+auth.json
+token.json
+.npmrc
+.netrc
+*.secret
+db.js
+
+# MongoDB secrets
+mongodb.conf
+*.mongodb
+mongo.config
+mongod.conf
+*.mongorc.js
 
 # Editor directories and files
 .vscode/*
-!.vscode/extensions.json
 .idea
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
 *.sw?
+
+# Build and coverage
+coverage/
+.cache/
+out/
 README.md
-LICENSE
